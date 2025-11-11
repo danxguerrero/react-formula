@@ -1,9 +1,7 @@
-import TestimonialCarousel from './testimonialCarousel/TestimonialCarousel.jsx'
+import { Pagination } from './pagination/Pagination.jsx';
 
 const App = () => {
-  return (
-      <TestimonialCarousel />
-  );
+  return <Pagination />;
 };
 
 export default App;
