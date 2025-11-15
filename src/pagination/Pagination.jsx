@@ -12,7 +12,7 @@ export const Pagination = () => {
     const postItems = posts.slice(9 * pageIdx, 9 * (pageIdx + 1)).map((post, idx) => <Post key={idx} post={post}/>)
     return (
         <div className="flex flex-col justify-center items-center m-5" >
-            <div className="w-full w-full max-w-5xl flex flex-wrap justify-center">
+            <div className="w-full max-w-5xl flex flex-wrap justify-center">
                 {postItems}
             </div>
             <div flex className="flex justify-center items-center">

@@ -1,7 +1,7 @@
-import { Pagination } from './pagination/Pagination.jsx';
+import { MunchCentral } from './munchCentral/MunchCentral';
 
 const App = () => {
-  return <Pagination />;
+  return <MunchCentral />;
 };
 
 export default App;
