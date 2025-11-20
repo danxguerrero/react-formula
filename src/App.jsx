@@ -1,7 +1,7 @@
-import { MunchCentral } from './munchCentral/MunchCentral';
+import FurniturePagination from "./furniturePagination/FurniturePagination";
 
 const App = () => {
-  return <MunchCentral />;
+  return <FurniturePagination />;
 };
 
 export default App;
