@@ -1,7 +1,7 @@
-import FurniturePagination from "./furniturePagination/FurniturePagination";
+import { TextInput } from './textInput/TextInput'
 
 const App = () => {
-  return <FurniturePagination />;
+  return <TextInput />;
 };
 
 export default App;
