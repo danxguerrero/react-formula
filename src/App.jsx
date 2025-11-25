@@ -1,7 +1,7 @@
-import { TextInput } from './textInput/TextInput'
+import { SignInForm } from './signInForm/SignInForm'
 
 const App = () => {
-  return <TextInput />;
+  return <SignInForm />
 };
 
 export default App;
