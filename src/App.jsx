@@ -1,7 +1,7 @@
-import { SignInForm } from './signInForm/SignInForm'
+import { WordFilter } from './wordFilter/WordFilter'
 
 const App = () => {
-  return <SignInForm />
+  return <WordFilter />
 };
 
 export default App;
