@@ -1,7 +1,7 @@
-import { WordFilter } from './wordFilter/WordFilter'
+import { MessageProject } from './messageProject/MessageProject'
 
 const App = () => {
-  return <WordFilter />
+  return <MessageProject />
 };
 
 export default App;
