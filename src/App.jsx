@@ -1,7 +1,7 @@
-import { MessageProject } from './messageProject/MessageProject'
+import { CheckboxInput } from "./checkboxInput/CheckboxInput";
 
 const App = () => {
-  return <MessageProject />
+  return <CheckboxInput />
 };
 
 export default App;
