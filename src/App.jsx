@@ -1,7 +1,7 @@
-import { CheckboxInput } from "./checkboxInput/CheckboxInput";
+import { NumberInput } from "./numberInput/NumberInput";
 
 const App = () => {
-  return <CheckboxInput />
+  return <NumberInput />
 };
 
 export default App;
