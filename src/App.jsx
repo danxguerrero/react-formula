@@ -1,7 +1,7 @@
-import { NumberInput } from "./numberInput/NumberInput";
+import { Select } from "./select/Select";
 
 const App = () => {
-  return <NumberInput />
+  return <Select />
 };
 
 export default App;
