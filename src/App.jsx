@@ -1,7 +1,7 @@
-import { Select } from "./select/Select";
+import CatDirectory from "./catDirectory/CatDirectory";
 
 const App = () => {
-  return <Select />
+  return <CatDirectory />
 };
 
 export default App;
