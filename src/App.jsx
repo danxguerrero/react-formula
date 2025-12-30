@@ -1,7 +1,7 @@
-import CatDirectory from "./catDirectory/CatDirectory";
+import {UsingFetch} from "./usingFetch/UsingFetch.jsx";
 
 const App = () => {
-  return <CatDirectory />
+  return <UsingFetch />
 };
 
 export default App;
