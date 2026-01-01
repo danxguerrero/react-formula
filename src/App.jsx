@@ -1,7 +1,7 @@
-import {UsingFetch} from "./usingFetch/UsingFetch.jsx";
+import { RandomJoke } from './randomJoke/RandomJoke.jsx'
 
 const App = () => {
-  return <UsingFetch />
+  return <RandomJoke />
 };
 
 export default App;
