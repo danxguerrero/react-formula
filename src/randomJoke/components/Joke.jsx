@@ -1,4 +1,4 @@
-export const Joke = ({ joke, showAnswer, setShowAnswer }) => {
+export const Joke = ({ joke, showAnswer }) => {
     return <div>
         <div className='m-8 flex flex-col items-center'>
             <div className='m-3 text-3xl text-slate-600'>{joke.question}</div>

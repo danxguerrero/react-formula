@@ -29,7 +29,7 @@ export const RandomJoke = () => {
     }
 
     return <div className='flex flex-col items-center'>
-        <Joke joke={joke} showAnswer={showAnswer} setShowAnswer={setShowAnswer} />
+        <Joke joke={joke} showAnswer={showAnswer} />
         <button
             onClick={() => setShowAnswer(!showAnswer)}
             className='bg-blue-500 p-3 px-8 rounded-lg text-white m-4'
