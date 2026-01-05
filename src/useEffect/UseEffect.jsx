@@ -5,11 +5,21 @@ export const UseEffect = () => {
   const [joke, setJoke] = useState(null);
   const [showAnswer, setShowAnswer] = useState(false);
 
-  const fetchRandomJoke = () => {
+  const fetchRandomJoke =  async () => {
     setShowAnswer(false);
-    fetch("https://api.react-formula.com/learning-api/demos/random-joke/jokes")
-      .then((response) => response.json())
-      .then((data) => setJoke(data));
+    try {
+        const response = await fetch("https://api.react-formula.com/learning-api/demos/random-joke/jokes")
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`)
+        }
+
+        const jokeData = await response.json()
+        
+        setJoke(jokeData);
+    } catch (err) {
+        console.error("There was an error fetching joke: ", err)
+    }
+    
   };
 
   return (
