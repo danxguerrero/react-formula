@@ -1,7 +1,7 @@
-import { RandomJoke } from './randomJoke/RandomJoke.jsx'
+import { UseEffect } from './useEffect/UseEffect.jsx'
 
 const App = () => {
-  return <RandomJoke />
+  return <UseEffect />
 };
 
 export default App;
