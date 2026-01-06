@@ -1,7 +1,7 @@
-import { UseEffect } from './useEffect/UseEffect.jsx'
+import { TeammatesProject } from './teammatesProject/TeammatesProject'
 
 const App = () => {
-  return <UseEffect />
+  return <TeammatesProject />
 };
 
 export default App;
