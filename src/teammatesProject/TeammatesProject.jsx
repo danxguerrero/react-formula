@@ -4,8 +4,10 @@ import { ProfileCard } from './components/ProfileCard'
 
 export const TeammatesProject = () => {
     const [profiles, setProfiles] = useState([])
+    const [isLoading, setIsLoading] = useState(false)
 
     const fetchProfiles = async () => {
+        setIsLoading(true)
         try {
             const response = await fetch('https://api.react-formula.com/learning-api/demos/teammates-project/profiles')
             if (!response.ok) {
@@ -18,6 +20,8 @@ export const TeammatesProject = () => {
 
         } catch (err) {
             console.error("There was an error fetching profiles: ", err)
+        } finally {
+            setIsLoading(false)
         }
     }
 
@@ -26,7 +30,11 @@ export const TeammatesProject = () => {
         fetchProfiles()
     }, [])
 
-    const ProfileItems = profiles.map((profile, idx) => <ProfileCard key={idx} profile={profile} />)
+    const ProfileCards = profiles.map((profile, idx) => <ProfileCard key={idx} profile={profile} />)
 
-    return <div className="bg-gray-100 w-full h-screen flex flex-col items-center justify-center">{ProfileItems}</div>
+    return (
+        <div className="bg-gray-100 w-full min-h-screen flex flex-col items-center justify-center">
+            {isLoading ? <i className="fa-solid fa-spinner text-2xl text-teal-500 animate-spin"></i> : ProfileCards}
+        </div>
+    )
 }
