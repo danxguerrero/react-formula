@@ -1,7 +1,7 @@
-import { TeammatesProject } from './teammatesProject/TeammatesProject'
+import { StocksProject } from './stocksProject/StocksProject'
 
 const App = () => {
-  return <TeammatesProject />
+  return <StocksProject />
 };
 
 export default App;
