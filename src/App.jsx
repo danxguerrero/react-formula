@@ -1,7 +1,7 @@
-import { WeatherProject } from './weatherProject/WeatherProject'
+import { ErrorHandling } from './errorHandling/ErrorHandling.jsx'
 
 const App = () => {
-  return <WeatherProject />
+  return <ErrorHandling />
 };
 
 export default App;
