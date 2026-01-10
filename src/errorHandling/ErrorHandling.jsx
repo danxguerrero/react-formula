@@ -36,9 +36,19 @@ export const ErrorHandling = () => {
     }, [])
 
     return (
-        <div className="flex justify-center">
+        <div className="flex flex-col justify-center h-screen">
+            <div className="p-3">
+                <button
+                    onClick={fetchWeather}
+                    className="bg-fuchsia-200 text-fuchsia-500 text-lg py-2 px-4 rounded-lg hover:bg-fuchsia-300"
+                >
+                    <i class="fa-solid fa-rotate-right"></i>
+                </button>
+            </div>
+            <div className="h-full flex items-center justify-center">
             {forecast && <WeatherCard forecast={forecast} />}
             {error && <ErrorMessage error={error.error_message} />}
+            </div>
         </div>
     )
 }
