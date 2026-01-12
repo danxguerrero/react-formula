@@ -1,24 +1,31 @@
 import { useState, useEffect } from 'react'
 
 import { StateCard } from './components/StateCard.jsx'
+import { ErrorMessage } from './components/ErrorMessage.jsx'
 
 export const StatesProject = () => {
     const [searchInput, setSearchInput] = useState("")
     const [state, setState] = useState(null)
+    const [error, setError] = useState(null)
 
     const fetchState = async (searchInput) => {
         try {
             const response = await fetch(`https://api.react-formula.com/learning-api/demos/states-project/states/${searchInput}`)
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`)
+            if (response.ok) {
+                const data = await response.json()
+    
+                setError(null)
+                setState(data)
+            } else {
+                setState(null)
+                const errorData = await response.json()
+                setError(errorData)
+                console.log(error)
             }
 
-            const data = await response.json()
-
-            setState(data)
         } catch (err) {
-            console.error('There was an error fetching states: ', err)
+            console.err("There was an error fetching state: ", err)
         }
     }
 
@@ -45,6 +52,7 @@ export const StatesProject = () => {
                 </form>
                 <div className="h-full">
                     {state && <StateCard state={state} />}
+                    {error && <ErrorMessage error={error.error} />}
                 </div>
             </div>
         </div>

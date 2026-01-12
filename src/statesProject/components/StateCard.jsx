@@ -15,7 +15,7 @@ export const StateCard = ({ state }) => {
                     </div>
                     <div className="flex m-1"> 
                         <div className="w-24 font-medium">Population</div>
-                        <div>{state.population.toLocaleString()}</div>
+                        <div>{state.population?.toLocaleString()}</div>
                     </div>
                 </div>
             </div>
