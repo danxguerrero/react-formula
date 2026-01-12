@@ -1,7 +1,7 @@
-import { StatesProject } from './statesProject/StatesProject.jsx'
+import { MessageBoard } from './crud/message-board/MessageBoard.jsx'
 
 const App = () => {
-  return <StatesProject />
+  return <MessageBoard />
 };
 
 export default App;
