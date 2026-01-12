@@ -1,7 +1,7 @@
-import { ErrorHandling } from './errorHandling/ErrorHandling.jsx'
+import { StatesProject } from './statesProject/StatesProject.jsx'
 
 const App = () => {
-  return <ErrorHandling />
+  return <StatesProject />
 };
 
 export default App;
