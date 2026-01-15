@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 
-import { WeatherCard } from '../weatherProject/components/WeatherCard'
+import { WeatherCard } from '../weather-project/components/WeatherCard.jsx'
 import { ErrorMessage } from './components/ErrorMessage.jsx'
 
 export const ErrorHandling = () => {
