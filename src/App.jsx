@@ -1,7 +1,7 @@
-import { MessageBoard } from './crud/message-board/MessageBoard.jsx'
+import TodoList from './crud/todo-list/TodoList.jsx'
 
 const App = () => {
-  return <MessageBoard />
+  return <TodoList />
 };
 
 export default App;
