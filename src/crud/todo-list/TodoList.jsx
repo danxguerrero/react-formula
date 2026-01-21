@@ -12,6 +12,16 @@ const TodoList = () => {
     setTodos(await response.json());
   };
 
+  const deleteTodo = async (todoId) => {
+    await TodoService.deleteTodo(todoId)
+    fetchTodos();
+  }
+
+  const updateTodo = async(todoId, newText, complete) => {
+    await TodoService.updateTodo(todoId, newText, complete)
+    fetchTodos()
+  }
+
   useEffect(() => {
     fetchTodos();
   }, []);
@@ -20,14 +30,14 @@ const TodoList = () => {
     <div className="flex items-start justify-center min-h-screen bg-gradient-to-br from-violet-600 to-orange-400">
       <div className="flex flex-col w-full max-w-sm p-4 mt-40 rounded-md bg-stone-100">
         {todos.map((todo) => (
-          <TodoItem todo={todo} key={todo.id} />
+          <TodoItem todo={todo} key={todo.id} deleteTodo={deleteTodo} updateTodo={updateTodo} />
         ))}
         {creating ? (
           <form
             className="flex flex-col"
             onSubmit={async (e) => {
               e.preventDefault();
-              await TodoService.addTodo(createText);
+              await TodoService.createTodo(createText);
               setCreateText("");
               setCreating(false);
               fetchTodos();
