@@ -13,3 +13,23 @@ export const addTodo = (text) => {
     body: JSON.stringify({ text }),
   });
 };
+
+export const deleteTodo = (todoId) =>
+  fetch(
+    `https://api.react-formula.com/learning-api/demos/todo-list-2/todos/${todoId}`,
+    {
+      method: "DELETE",
+    }
+  );
+
+export const updateTodo = (todoId, text, complete) =>
+  fetch(
+    `https://api.react-formula.com/learning-api/demos/todo-list-2/todos/${todoId}`,
+    {
+      method: "PUT",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({ text, complete }),
+    }
+  );
