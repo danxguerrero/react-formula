@@ -1,7 +1,7 @@
-import TodoList from './crud/todo-list/TodoList.jsx'
+import {FrontendRouting} from './react-router/frontend-routing/FrontendRouting.jsx'
 
 const App = () => {
-  return <TodoList />
+  return <FrontendRouting />
 };
 
 export default App;
