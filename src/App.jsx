@@ -1,7 +1,7 @@
-import {FrontendRoutingII} from './react-router/frontend-routing-ii/FrontendRoutingII.jsx'
+import UseRef from './other-react-hooks/refs-project/RefsProject'
 
 const App = () => {
-  return <FrontendRoutingII />
+  return <UseRef />
 };
 
 export default App;
