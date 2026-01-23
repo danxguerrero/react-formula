@@ -1,7 +1,7 @@
-import {FrontendRouting} from './react-router/frontend-routing/FrontendRouting.jsx'
+import {FrontendRoutingII} from './react-router/frontend-routing-ii/FrontendRoutingII.jsx'
 
 const App = () => {
-  return <FrontendRouting />
+  return <FrontendRoutingII />
 };
 
 export default App;
