@@ -6,7 +6,7 @@ export const NavBar = () => {
   console.log(location.pathname)
   return (
     <nav className="bg-amber-50 flex justify-center font-opensans">
-      <div className="max-w-5xl w-full flex justify-between items-center">
+      <div className="max-w-5xl w-full flex justify-between items-center px-6 py-4">
         <Link to='/' className="font-bubblegum text-green-800 text-2xl flex flex-col items-center">
           <img
             className="w-32 mb-2"
