@@ -1,7 +1,7 @@
-import UseRef from './other-react-hooks/refs-project/RefsProject'
+import IntroToContext from './other-react-hooks/intro-to-react-context/IntroToContext'
 
 const App = () => {
-  return <UseRef />
+  return <IntroToContext />
 };
 
 export default App;
