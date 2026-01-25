@@ -1,7 +1,7 @@
-import IntroToContext from './other-react-hooks/intro-to-react-context/IntroToContext'
+import ThemeContextApp from './other-react-hooks/theme-context/ThemeContextApp'
 
 const App = () => {
-  return <IntroToContext />
+  return <ThemeContextApp />
 };
 
 export default App;
