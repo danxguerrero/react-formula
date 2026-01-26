@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import {TodoItem} from "./components/TodoItem.jsx";
 import * as TodoService from "./services/todo";
 
@@ -7,10 +7,10 @@ const TodoList = () => {
   const [creating, setCreating] = useState(false);
   const [createText, setCreateText] = useState("");
 
-  const fetchTodos = async () => {
+  const fetchTodos = useCallback(async () => {
     const response = await TodoService.getAllTodos();
     setTodos(await response.json());
-  };
+  }, []);
 
   const deleteTodo = async (todoId) => {
     await TodoService.deleteTodo(todoId)
@@ -24,7 +24,7 @@ const TodoList = () => {
 
   useEffect(() => {
     fetchTodos();
-  }, []);
+  }, [fetchTodos]);
 
   return (
     <div className="flex items-start justify-center min-h-screen bg-gradient-to-br from-violet-600 to-orange-400">
