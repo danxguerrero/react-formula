@@ -1,7 +1,7 @@
-import UseEffectCleanUp from './miscellaneous-features/use-effect-clean-up/UseEffectCleanUp'
+import ScreenSizeBreakpoints from './responsive-design/screen-size-breakpoints/ScreenSizeBreakpoints'
 
 const App = () => {
-  return <UseEffectCleanUp />
+  return <ScreenSizeBreakpoints />
 };
 
 export default App;

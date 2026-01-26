@@ -5,7 +5,8 @@ export default {
     extend: {
       fontFamily: {
         bubblegum: ["Bubblegum Sans"],
-        opensans: ["Open Sans"]
+        opensans: ["Open Sans"],
+        tiny: ["Tiny5"]
       }
     },
   },
