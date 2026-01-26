@@ -1,7 +1,7 @@
-import ThemeContextApp from './other-react-hooks/theme-context/ThemeContextApp'
+import UseCallback from './other-react-hooks/use-callback/UseCallback'
 
 const App = () => {
-  return <ThemeContextApp />
+  return <UseCallback />
 };
 
 export default App;
