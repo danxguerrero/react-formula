@@ -1,7 +1,7 @@
-import UseCallback from './other-react-hooks/use-callback/UseCallback'
+import UseEffectCleanUp from './miscellaneous-features/use-effect-clean-up/UseEffectCleanUp'
 
 const App = () => {
-  return <UseCallback />
+  return <UseEffectCleanUp />
 };
 
 export default App;
