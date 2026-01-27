@@ -6,7 +6,9 @@ export default {
       fontFamily: {
         bubblegum: ["Bubblegum Sans"],
         opensans: ["Open Sans"],
-        tiny: ["Tiny5"]
+        tiny: ["Tiny5"],
+        ubuntu: ["Ubuntu"],
+        roboto: ["Roboto"],
       }
     },
   },
