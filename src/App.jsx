@@ -1,7 +1,7 @@
-import ScreenSizeBreakpoints from './responsive-design/screen-size-breakpoints/ScreenSizeBreakpoints'
+import MobileResponsiveDesign from './responsive-design/mobile-responsive-design/MobileResponsiveDesign.jsx'
 
 const App = () => {
-  return <ScreenSizeBreakpoints />
+  return <MobileResponsiveDesign />
 };
 
 export default App;
